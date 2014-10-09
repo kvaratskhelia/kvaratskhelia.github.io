@@ -7,13 +7,21 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="css/libs/animate.css">
+    <link rel="stylesheet" href="css/site.css">
+    <style>
+        .wow:first-child {
+        visibility: hidden;
+        }
+    </style>
+
 
     <title>George's Static Page</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
     <!-- Bootstrap theme -->
-    <link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap-theme.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -27,6 +35,7 @@
   </head>
 
   <body role="document">
+    <script src="dist/wow.js"></script>
 
     <!-- Fixed navbar -->
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -53,7 +62,8 @@
     <div class="container theme-showcase" role="main">
 
       <!-- Main jumbotron for a primary marketing message or call to action -->
-	<div class="jumbotron">
+	<section class="section--big wow fadeInDown" style="background-color: #FFFFFF">
+    <div class="jumbotron">
 		<div class="row">
 		<div class="col-sm-4">
 		<img height="250" width="250" src="myPicture.jpg">
@@ -64,10 +74,65 @@
       		</div>
 		</div>
 		</div>
-		<div class="page-header">
-			<h1>Website currently in developement</h1>
-		</div>
-		<section></section>
-	</div>
-</body>
+    </section>
+    
+    
+    
+    <section class="section--big wow fadeInDown">
+    <div class="jumbotron">
+        <div class="row">
+            <div class="col-sm-8">
+            <h1>RESUME</h1>
+            <p></p>
+            </div>
+        </div>
+    </div>
+    </section>
+    
+    
+    <section class="section--big wow fadeInDown">
+    <div class="jumbotron">
+        <div class="row">
+            <div class="col-sm-8">
+            <img height="250" width="400" src="parrot_head.jpg">
+            </div>
+            </div>
+        </div>
+    </section>
+    <section class="wow fadeInDown">
+        <div class="jumbotron">
+            <div class="row">
+            <div class="col-sm-8">
+            <p>This is a test</p>
+            </div>
+            </div>
+        </div>
+    </section> 
+    <section class="wow fadeInDown">
+        <div class="jumbotron">
+            <div class="row">
+            <div class="col-sm-8">
+            <p>THIS IS THE SHIT</p>
+            </div>
+            </div>
+        </div>
+    </section>
+    </div>
+    <script src="dist/wow.js"></script>
+    <script>
+    wow = new WOW(
+            {
+            animateClass: 'animated',
+            offset:       100
+            }
+        );
+        wow.init();
+        document.getElementById('moar').onclick = function() {
+        var section = document.createElement('section');
+        section.className = 'section--purple wow fadeInDown';
+        this.parentNode.insertBefore(section, this);
+    };
+  </script>
+
+    </body>
 </html>

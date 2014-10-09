@@ -10,8 +10,10 @@ html {
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
-body {
-  margin: 0;
+body {   
+    margin: 0;
+    background: url('newyork.jpg') no-repeat center center;
+    background-attachment: fixed;
 }
 article,
 aside,
@@ -899,7 +901,7 @@ body {
   font-size: 14px;
   line-height: 1.42857143;
   color: #333;
-  background-color: #fff;
+  background-color: #FAA;
 }
 input,
 button,
@@ -999,7 +1001,8 @@ h6,
   font-family: inherit;
   font-weight: 500;
   line-height: 1.1;
-  color: inherit;
+  color: white;
+  /*The color used to be inherit */
 }
 h1 small,
 h2 small,
