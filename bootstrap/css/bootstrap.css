@@ -8,12 +8,12 @@
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
-      -ms-text-size-adjust: 100%;
-}
-body {   
+      -ms-text-size-adjust: 100%;  
+} 
+body {
     margin: 0;
-    background: url('newyork.jpg') no-repeat center center;
-    background-attachment: fixed;
+    height: 100%;
+    background: #fff url('background.jpg') center top no-repeat fixed;
 }
 article,
 aside,
