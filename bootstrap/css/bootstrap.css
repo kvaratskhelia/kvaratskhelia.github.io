@@ -901,7 +901,7 @@ body {
   font-size: 14px;
   line-height: 1.42857143;
   color: #333;
-  background-color: #FAA;
+  background-color: #FFF;
 }
 input,
 button,
@@ -4548,14 +4548,18 @@ a.list-group-item.active > .badge,
   margin-left: 3px;
 }
 .jumbotron {
-  padding: 30px;
-  margin-bottom: 30px;
+  padding: 10px;
+  margin-bottom: 0px;
   color: inherit;
   background-color: #eee;
 }
 .jumbotron h1,
 .jumbotron .h1 {
   color: inherit;
+}
+.jumbotron h2,
+.jumbotron .h2 {
+  color:inherit;
 }
 .jumbotron p {
   margin-bottom: 15px;
@@ -4577,8 +4581,8 @@ a.list-group-item.active > .badge,
     padding-bottom: 48px;
   }
   .container .jumbotron {
-    padding-right: 60px;
-    padding-left: 60px;
+    padding-right: 50px;
+    padding-left: 50px;
   }
   .jumbotron h1,
   .jumbotron .h1 {
