@@ -3,6 +3,15 @@ h1 {
   line-height:   1.5;
   color: #2c3e50;
   font-weight:   100;
+	padding-left: 25px;
+}
+
+h2 {
+	padding-left: 75px;
+}
+
+p {
+	padding-left: 125px;
 }
 
 #container {
@@ -12,7 +21,7 @@ h1 {
 
 section {
   height: 100%;
-  margin: 60px 0; 
+  margin: 250px 0; 
 }
 
 .section--big {
@@ -30,6 +39,8 @@ section {
 .section--green {
   background-color: #2ecc71;
 }
+
+
 
 #main {
   text-align: center;
